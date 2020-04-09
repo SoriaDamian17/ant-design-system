@@ -10,7 +10,9 @@
     "start": "webpack-dev-server -w --env.ANALYZER=server --hot --port 3000 --config ./config/webpack.config.js",
     "lint": "eslint src",
     "lint:scss": "stylelint src/**/*.scss --fix",
-    "test": ""
+    "test": "",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,8 @@
     "@babel/core": "^7.8.3",
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-react": "^7.8.3",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.0.6",
     "brotli-webpack-plugin": "^1.1.0",
@@ -61,6 +65,10 @@
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/react": "^5.3.18",
     "@reach/router": "^1.3.3",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",

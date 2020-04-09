@@ -4,9 +4,7 @@ import './Layout.scss';
 import Logo from '../Logo';
 import Button from '../Button';
 
-const Layout = (props) => {
-
-    const { title, children } = props;
+const Layout = ({ title, children }) => {
 
     useEffect(() => {
         document.title = title;
